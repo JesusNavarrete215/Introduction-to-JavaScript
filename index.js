@@ -17,7 +17,9 @@ Do the following:
 
    HINT: no function required
 */
+var votingAge = 20
 
+console.log(votingAge >= 18);
 
 
 /*
@@ -31,9 +33,11 @@ Do the following:
    HINT: no function required
 */
 
+var one = 1
+var two = 2
+var one = 2
 
-
-
+console.log(one);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,7 +50,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var one = "1999";
+console.log(parseInt(one));
 
 
 /*
@@ -58,8 +63,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(a,b){
     /*add your code here*/
+    return a*b;
   }
 
 
@@ -74,8 +80,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(age){
     /*add your code here*/
+    return age*7;
 }
 
 
@@ -113,18 +120,19 @@ function hungryDog(weight, age){
     } else if(age >=1 && weight >=6 && weight <=10){
       return weight * 0.04;
     }else if(age >= 1 && weight >= 11 && weight <= 15){
+      return weight *0.03;
+    }else if (age >= 1 && weight > 15){
       return weight * 0.02;
-    }else if (age<1 && >= 0.583){
+    }else if (age<1 && age >= 0.583){
       return weight * 0.04;
     }else if(age < 0.583 && age >= 0.333){
-      return weight * .005;
-    }else if(age <.444){
+      return weight * .05;
+    }else if(age <.333){
       return weight * 0.10;
     }else{
-      return 'please try again'
+      return 'please try again';
     }
-    
-    }
+}
 
 
 
@@ -149,8 +157,17 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+const computer = math.random()
+
 function game(user, computer){
     /*add your code here*/
+    if(user){
+      return "you win"
+    }elseif(){
+      return "you lose"
+    }else{
+      return "it's a tie"
+    }
 }
   
   
